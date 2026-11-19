@@ -1,0 +1,9 @@
+﻿name: Hello Workflow
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Print message
+        run: echo "Hello from my cybersecurity portfolio!"
